@@ -30,4 +30,4 @@ spec:
   targetRef:
     group: gateway.networking.k8s.io
     kind: HTTPRoute
-    name: fake-api-gem
+    name: fake-api

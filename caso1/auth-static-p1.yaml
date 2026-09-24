@@ -1,16 +1,16 @@
 apiVersion: kuadrant.io/v1
 kind: AuthPolicy
 metadata:
-  name: auth-static-p2
+  name: auth-static-p1
 spec:
   rules:
     authentication:
-      api-key-authn-54a5ff77:
+      api-key-authn-54a5ff6d:
         apiKey:
           allNamespaces: true
           selector:
             matchLabels:
-              application_id: 731b0759
+              application_id: a8d4c529
               key-type: app-key
               product: l2
         credentials:
@@ -19,15 +19,15 @@ spec:
         metrics: false
         priority: 0
     authorization:
-      require-app-id-p2:
+      require-app-id:
         metrics: false
         patternMatching:
           patterns:
           - operator: eq
             selector: request.headers.app_id
-            value: 731b0759
+            value: a8d4c529
         priority: 0
   targetRef:
     group: gateway.networking.k8s.io
     kind: HTTPRoute
-    name: fake-api-gem
+    name: fake-api
