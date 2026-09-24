@@ -1,0 +1,19 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  labels:
+    kuadrant.io/gateway: "true"
+  name: gw-l2
+spec:
+  addresses:
+  - type: IPAddress
+    value: 192.168.1.200  ## CHANGE THIS
+  gatewayClassName: istio
+  listeners:
+  - allowedRoutes:
+      namespaces:
+        from: All
+    hostname: api.fortaleza.bank
+    name: api-x
+    port: 80
+    protocol: HTTP

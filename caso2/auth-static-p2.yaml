@@ -1,0 +1,51 @@
+apiVersion: kuadrant.io/v1
+kind: AuthPolicy
+metadata:
+  creationTimestamp: "2026-09-24T15:32:05Z"
+  generation: 3
+  name: auth-static-p2
+  namespace: limitations-2
+  resourceVersion: "5151112"
+  uid: b8714eb6-8e25-4350-bb64-47ee4d94cddd
+spec:
+  rules:
+    authentication:
+      api-key-authn-54a5ff77:
+        apiKey:
+          allNamespaces: true
+          selector:
+            matchLabels:
+              application_id: 731b0759
+              key-type: app-key
+              product: l2
+        credentials:
+          customHeader:
+            name: app_key
+        metrics: false
+        priority: 0
+    authorization:
+      require-app-id-p2:
+        metrics: false
+        patternMatching:
+          patterns:
+          - operator: eq
+            selector: request.headers.app_id
+            value: 731b0759
+        priority: 0
+  targetRef:
+    group: gateway.networking.k8s.io
+    kind: HTTPRoute
+    name: fake-api-gem
+status:
+  conditions:
+  - lastTransitionTime: "2026-09-24T15:32:05Z"
+    message: AuthPolicy has been accepted
+    reason: Accepted
+    status: "True"
+    type: Accepted
+  - lastTransitionTime: "2026-09-24T15:54:58Z"
+    message: AuthPolicy has been successfully enforced
+    reason: Enforced
+    status: "True"
+    type: Enforced
+  observedGeneration: 3

@@ -1,0 +1,267 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: limit-test-gateway
+spec:
+  gatewayClassName: istio # Cambia por tu GatewayClass (eg, envoy, istio, etc.)
+  listeners:
+  - name: http-1
+    port: 80
+    protocol: HTTP
+    hostname: "app-1.example.com"
+  - name: http-2
+    port: 80
+    protocol: HTTP
+    hostname: "app-2.example.com"
+  - name: http-3
+    port: 80
+    protocol: HTTP
+    hostname: "app-3.example.com"
+  - name: http-4
+    port: 80
+    protocol: HTTP
+    hostname: "app-4.example.com"
+  - name: http-5
+    port: 80
+    protocol: HTTP
+    hostname: "app-5.example.com"
+  - name: http-6
+    port: 80
+    protocol: HTTP
+    hostname: "app-6.example.com"
+  - name: http-7
+    port: 80
+    protocol: HTTP
+    hostname: "app-7.example.com"
+  - name: http-8
+    port: 80
+    protocol: HTTP
+    hostname: "app-8.example.com"
+  - name: http-9
+    port: 80
+    protocol: HTTP
+    hostname: "app-9.example.com"
+  - name: http-10
+    port: 80
+    protocol: HTTP
+    hostname: "app-10.example.com"
+  - name: http-11
+    port: 80
+    protocol: HTTP
+    hostname: "app-11.example.com"
+  - name: http-12
+    port: 80
+    protocol: HTTP
+    hostname: "app-12.example.com"
+  - name: http-13
+    port: 80
+    protocol: HTTP
+    hostname: "app-13.example.com"
+  - name: http-14
+    port: 80
+    protocol: HTTP
+    hostname: "app-14.example.com"
+  - name: http-15
+    port: 80
+    protocol: HTTP
+    hostname: "app-15.example.com"
+  - name: http-16
+    port: 80
+    protocol: HTTP
+    hostname: "app-16.example.com"
+  - name: http-17
+    port: 80
+    protocol: HTTP
+    hostname: "app-17.example.com"
+  - name: http-18
+    port: 80
+    protocol: HTTP
+    hostname: "app-18.example.com"
+  - name: http-19
+    port: 80
+    protocol: HTTP
+    hostname: "app-19.example.com"
+  - name: http-20
+    port: 80
+    protocol: HTTP
+    hostname: "app-20.example.com"
+  - name: http-21
+    port: 80
+    protocol: HTTP
+    hostname: "app-21.example.com"
+  - name: http-22
+    port: 80
+    protocol: HTTP
+    hostname: "app-22.example.com"
+  - name: http-23
+    port: 80
+    protocol: HTTP
+    hostname: "app-23.example.com"
+  - name: http-24
+    port: 80
+    protocol: HTTP
+    hostname: "app-24.example.com"
+  - name: http-25
+    port: 80
+    protocol: HTTP
+    hostname: "app-25.example.com"
+  - name: http-26
+    port: 80
+    protocol: HTTP
+    hostname: "app-26.example.com"
+  - name: http-27
+    port: 80
+    protocol: HTTP
+    hostname: "app-27.example.com"
+  - name: http-28
+    port: 80
+    protocol: HTTP
+    hostname: "app-28.example.com"
+  - name: http-29
+    port: 80
+    protocol: HTTP
+    hostname: "app-29.example.com"
+  - name: http-30
+    port: 80
+    protocol: HTTP
+    hostname: "app-30.example.com"
+  - name: http-31
+    port: 80
+    protocol: HTTP
+    hostname: "app-31.example.com"
+  - name: http-32
+    port: 80
+    protocol: HTTP
+    hostname: "app-32.example.com"
+  - name: http-33
+    port: 80
+    protocol: HTTP
+    hostname: "app-33.example.com"
+  - name: http-34
+    port: 80
+    protocol: HTTP
+    hostname: "app-34.example.com"
+  - name: http-35
+    port: 80
+    protocol: HTTP
+    hostname: "app-35.example.com"
+  - name: http-36
+    port: 80
+    protocol: HTTP
+    hostname: "app-36.example.com"
+  - name: http-37
+    port: 80
+    protocol: HTTP
+    hostname: "app-37.example.com"
+  - name: http-38
+    port: 80
+    protocol: HTTP
+    hostname: "app-38.example.com"
+  - name: http-39
+    port: 80
+    protocol: HTTP
+    hostname: "app-39.example.com"
+  - name: http-40
+    port: 80
+    protocol: HTTP
+    hostname: "app-40.example.com"
+  - name: http-41
+    port: 80
+    protocol: HTTP
+    hostname: "app-41.example.com"
+  - name: http-42
+    port: 80
+    protocol: HTTP
+    hostname: "app-42.example.com"
+  - name: http-43
+    port: 80
+    protocol: HTTP
+    hostname: "app-43.example.com"
+  - name: http-44
+    port: 80
+    protocol: HTTP
+    hostname: "app-44.example.com"
+  - name: http-45
+    port: 80
+    protocol: HTTP
+    hostname: "app-45.example.com"
+  - name: http-46
+    port: 80
+    protocol: HTTP
+    hostname: "app-46.example.com"
+  - name: http-47
+    port: 80
+    protocol: HTTP
+    hostname: "app-47.example.com"
+  - name: http-48
+    port: 80
+    protocol: HTTP
+    hostname: "app-48.example.com"
+  - name: http-49
+    port: 80
+    protocol: HTTP
+    hostname: "app-49.example.com"
+  - name: http-50
+    port: 80
+    protocol: HTTP
+    hostname: "app-50.example.com"
+  - name: http-51
+    port: 80
+    protocol: HTTP
+    hostname: "app-51.example.com"
+  - name: http-52
+    port: 80
+    protocol: HTTP
+    hostname: "app-52.example.com"
+  - name: http-53
+    port: 80
+    protocol: HTTP
+    hostname: "app-53.example.com"
+  - name: http-54
+    port: 80
+    protocol: HTTP
+    hostname: "app-54.example.com"
+  - name: http-55
+    port: 80
+    protocol: HTTP
+    hostname: "app-55.example.com"
+  - name: http-56
+    port: 80
+    protocol: HTTP
+    hostname: "app-56.example.com"
+  - name: http-57
+    port: 80
+    protocol: HTTP
+    hostname: "app-57.example.com"
+  - name: http-58
+    port: 80
+    protocol: HTTP
+    hostname: "app-58.example.com"
+  - name: http-59
+    port: 80
+    protocol: HTTP
+    hostname: "app-59.example.com"
+  - name: http-60
+    port: 80
+    protocol: HTTP
+    hostname: "app-60.example.com"
+  - name: http-61
+    port: 80
+    protocol: HTTP
+    hostname: "app-61.example.com"
+  - name: http-62
+    port: 80
+    protocol: HTTP
+    hostname: "app-62.example.com"
+  - name: http-63
+    port: 80
+    protocol: HTTP
+    hostname: "app-63.example.com"
+  - name: http-64
+    port: 80
+    protocol: HTTP
+    hostname: "app-64.example.com"
+  - name: http-65
+    port: 80
+    protocol: HTTP
+    hostname: "app-65.example.com"
